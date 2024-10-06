@@ -1,8 +1,9 @@
 #	So_Long (Pacman)- 42 School Lisbon
 
 ### Table of Contents
+
 * [Introduction](#introduction-)
-* [Install](#install-)
+* [How to Install](#how-to-install-️)
 * [How to Play?](#how-to-play-)
 * [Project Objectives](#project-objectives-)
 * [Pacman-Themed Mechanics](#pacman-themed-mechanics-)
@@ -14,7 +15,7 @@ So_Long is a graphical project from 42 School where students are tasked with bui
 
 This Pacman-themed version incorporates the original game’s nostalgic elements: the player-controlled Pacman navigates the maze, collects dots, avoids ghosts, and heads towards the goal — while adhering to the specific requirements of the so_long project.
 
-##	Install 🛠️
+##	How to Install 🛠️
 
 **Steps**
 ```
