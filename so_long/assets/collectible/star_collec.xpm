@@ -1,0 +1,28 @@
+/* XPM */
+static char * pacman_coin_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"16 16 5 1",
+/* colors */
+"  c #000000",
+". c #000000",
+"o c #FFFF00",
+"X c #FFD700",
+"+ c #FFFFFF",
+/* pixels */
+"                ",
+"       ..       ",
+"      .oo.      ",
+"     .oooo.     ",
+"    .oooooo.    ",
+"   .oooooooo.   ",
+"  .oooooooooo.  ",
+" .oooooooooooo. ",
+" .oooooooooooo. ",
+"  .oooooooooo.  ",
+"   .ooooooXoo.  ",
+"    .ooXooo+.   ",
+"     .oo.++     ",
+"      .+.       ",
+"                ",
+"                "
+};

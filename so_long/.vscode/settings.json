@@ -1,0 +1,17 @@
+{
+	"files.associations": {
+		"libso_long.h": "c",
+		"unistd.h": "c",
+		"get_next_line.h": "c",
+		"get_next_line_bonus.h": "c",
+		"limits.h": "c",
+		"lib_definitions.h": "c",
+		"lib_aighost.h": "c",
+		"stdio.h": "c"
+	},
+	"cSpell.language": "en,pt-BR",
+	"cSpell.words": [
+		"BLINKY",
+		"neigbor"
+	]
+}

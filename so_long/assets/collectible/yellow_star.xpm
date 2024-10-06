@@ -1,0 +1,44 @@
+/* XPM */
+static char * yellow_star[] = {
+/* width height num_colors chars_per_pixel */
+"32 32 6 1",
+/* colors */
+"  c #000000",
+". c #FFFF00",
+"+ c #FFD700",  /* A darker yellow for the border */
+"* c #FFA500",  /* An even darker yellow for inner details */
+"# c #FFD000",  /* Another shade for inner details */
+"@ c #FFCC00",  /* Another shade for additional details */
+/* pixels */
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"               ++               ",
+"              +..+              ",
+"             +....+             ",
+"          ++++....++++          ",
+"         +*.........*+          ",
+"         +*..****..*.+          ",
+"          +++****++++           ",
+"           ++*....*++           ",
+"          +.*#*..*#*.@          ",
+"         +*.########.@          ",
+"         +**@******@*+          ",
+"         +++++++++++++          ",
+"           ++++++++++           ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                "};

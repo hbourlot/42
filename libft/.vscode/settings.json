@@ -1,0 +1,11 @@
+{
+	"files.associations": {
+		"libft.h": "c",
+		"string.h": "c",
+		"stdio.h": "c"
+	},
+	"editor.tokenColorCustomizations": {
+		"comments": "",
+		"textMateRules": []
+	}
+}
