@@ -18,7 +18,7 @@ CFLAGS = 			-g -Wall -Wextra -Werror -DFRAME_RATE=$(FRAME_RATE)
 LEAKS = 			valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes
 MINILIB_FLAGS = 	-Llibraries/minilibx-linux -lmlx_Linux -lX11 -lXext
 INC = 				inc/
-EXEC_NAME = 		so_long
+NAME =		 		so_long
 OBJ_DIR = 			OBJ/
 SRC_DIR = 			SRC/
 SRC_MAP_DIR = 		$(SRC_DIR)MAP/
@@ -69,12 +69,12 @@ invalid_maps =		MAP/invalid/1.ber MAP/invalid/2.ber MAP/invalid/3.ber MAP/invali
 					MAP/invalid/9.ber MAP/
 
 .PHONY:		all clean fclean re
-all:			$(EXEC_NAME) 
+all:			$(NAME) 
 
-$(EXEC_NAME):	$(LIBFT_LIB) $(GETNEXTLINE_LIB) $(PRINTF_LIB) $(LIB) main.o
+$(NAME):	$(LIBFT_LIB) $(GETNEXTLINE_LIB) $(PRINTF_LIB) $(LIB) main.o
 					@make re -s -C ./libraries/minilibx-linux/
 					@$(CC) $(CFLAGS) main.o $(LIB) $(LINK) -o $@
-					@echo "$(GREEN_D)Executable '$(EXEC_NAME)' compiled successfully!$(RESET)"
+					@echo "$(GREEN_D)Executable '$(NAME)' compiled successfully!$(RESET)"
 
 $(LIB):		$(OBJ_SRC)
 					@echo "$(CYAN)Files compiled successfully!$(RESET)"
@@ -118,7 +118,7 @@ clean:
 
 fclean:		clean
 					@printf "$(CYAN)Cleaning up *.a files...$(RESET)\b"
-					@rm -rf $(EXEC_NAME) $(LIB)
+					@rm -rf $(NAME) $(LIB)
 					@make fclean -s -C $(LIBFT_DIR)
 					@make fclean -s -C $(GETNEXTLINE_DIR)
 					@make fclean -s -C $(PRINTF_DIR)
@@ -132,14 +132,14 @@ new:
 invalid: 	all
 					@echo "$(CYAN)Starting memory leak checks for invalid maps...$(RESET)"
 					@ for map in $(invalid_maps); do \
-					printf "\nCommand: $(GREEN)$(LEAKS)./$(EXEC_NAME) $$map$(RESET)\n"; \
-					$(LEAKS) ./$(EXEC_NAME) $$map ; \
+					printf "\nCommand: $(GREEN)$(LEAKS)./$(NAME) $$map$(RESET)\n"; \
+					$(LEAKS) ./$(NAME) $$map ; \
 					done
 					@echo "$(CYAN)Memory checks completed for all invalid maps.$(RESET)"
 
 pacman:
 					@$(MAKE) re -s
-					@./$(EXEC_NAME) MAP/pacman.ber
+					@./$(NAME) MAP/pacman.ber
 
 
 
