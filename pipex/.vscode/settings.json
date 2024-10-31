@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "wait.h": "c",
+        "fcntl.h": "c",
+        "unistd.h": "c",
+        "libft.h": "c",
+        "lib_pipex.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c"
+    },
+    "cSpell.words": [
+        "hbourlot",
+        "jacira",
+        "libft",
+        "Mateus",
+        "pipex"
+    ]
+}
