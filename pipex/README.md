@@ -42,6 +42,14 @@ The project focuses on several key concepts:
 
 ##	Program Usage 💻
 
+To get started, first clone the repository from GitHub:
+
+```
+git clone https://github.com/username/pipex.git
+cd pipex
+make
+```
+
 To execute the pipex program, you can use the following syntax:
 
 ```
@@ -101,6 +109,18 @@ This will:
 • The program checks for errors such as file access issues or invalid commands.
 
 #	Bonus Features (if applicable) 🏅
+
+• **Compilation:**
+
+```
+make bonus
+```
+Once compiled, you can run pipex using the following syntax:
+
+```
+./pipex here_doc EOF cmd1 cmd2 outfile
+./pipex infile cmd1 cmd2 cmdn... outfile
+```
 
 • **Multiple commands:**
 
