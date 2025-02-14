@@ -1,0 +1,31 @@
+{
+    "cSpell.words": [
+        "fclean",
+        "helgrind",
+        "libft",
+        "libphilo",
+        "lphilo",
+        "putendl",
+        "putnbr",
+        "putstr",
+        "striteri",
+        "strmapi",
+        "strtrim",
+        "VALGRIND",
+        "Wextra"
+    ],
+    "files.associations": {
+        "philosophers.h": "c",
+        "libft.h": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "",
+        "textMateRules": []
+    }
+}
