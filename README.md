@@ -9,7 +9,7 @@ This folder contains all the projects I’ve completed so far at 42 School. Each
 
 **ft_printf**: A custom implementation of the C printf function, supporting various formatting options.
 
-**get_next_line**: A function that reads a line from a file descriptor, one of the first steps towards mastering file handling.
+**get_next_line**: A function that reads a line from a file descriptor, one of the first steps towards mastering file handling 😎.
 
 **libft**: A custom C library that reimplements standard C functions and utility tools.
 
@@ -18,3 +18,6 @@ This folder contains all the projects I’ve completed so far at 42 School. Each
 **so_long**: A 2D game development project themed around Pac-Man, utilizing basic graphic rendering and player input.
 
 **pipex**: A program that replicates Unix shell pipelines, redirecting input and output through commands in a sequence. This project reinforces concepts like inter-process communication, process management, and file descriptor manipulation in C.
+
+**philosophers**: A concurrency project that simulates the classic Dining Philosophers problem. It requires implementing synchronization mechanisms like mutexes and semaphores (bonus part) to manage shared resources while preventing deadlocks and starvation.
+
