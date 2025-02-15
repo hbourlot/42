@@ -6,7 +6,7 @@
 /*   By: hbourlot <hbourlot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 21:42:27 by hbourlot          #+#    #+#             */
-/*   Updated: 2024/11/25 15:49:33 by hbourlot         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:01:25 by hbourlot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,12 @@
 static void	sleeping_thinking(t_philo *philo, t_data *table)
 {
 	int	time_to_think;
-
-	if (philo->status == THINKING || philo->status == EATING
-		|| philo->status == 0)
-	{
-		philo->status = SLEEPING;
-		show_philo_event(table, philo->id, SLEEPING);
-		ft_wait(table, table->time_to_sleep);
-	}
+	show_philo_event(table, philo->id, SLEEPING);
+	ft_wait(table, table->time_to_sleep);
 	time_to_think = get_think_time(table->time_to_die, table->time_to_eat,
 			table->time_to_sleep);
-	if (philo->status == SLEEPING || philo->status == EATING
-		|| philo->status == 0)
-	{
-		philo->status = THINKING;
-		show_philo_event(table, philo->id, THINKING);
-		ft_wait(table, time_to_think);
-	}
+	show_philo_event(table, philo->id, THINKING);
+	ft_wait(table, time_to_think);
 }
 
 static int	is_only_one_philo(t_philo *philo, t_data *table)
